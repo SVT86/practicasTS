@@ -21,7 +21,7 @@ class Persona {
         return this.apellido;
     }
 
-    public getDireccion():any {
+    public getDireccion(): any {
         return this.direccion;
     }
 }
@@ -42,7 +42,7 @@ class Direccion {
 class Cliente extends Persona {
 
     private id: number;
-    constructor(nombre: string, apellido: string, identificador: number, direccion?: any)  {
+    constructor(nombre: string, apellido: string, identificador: number, direccion?: any) {
         super(nombre, apellido, direccion);
         this.id = identificador;
     }
@@ -82,4 +82,10 @@ class Automovil {
 
 }
 
-export {Persona,Direccion,Cliente,Automovil};
+export default function principal(): string {
+    return "HOILA desde modulo clases.ts";
+}
+
+export const PI: number = 3.141592;
+
+export { Persona, Direccion, Cliente, Automovil };

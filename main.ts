@@ -83,7 +83,9 @@ class Automovil {
 }
 */
 
-import {Persona,Direccion,Cliente,Automovil} from "./clases";
+import principal, {Persona,Direccion,Cliente,Automovil} from "./clases";
+
+import * as texto from './clases';
 
 
 
@@ -113,3 +115,7 @@ console.log("y vive en ",clienteJuan.getDireccion().calle," al ",clienteJuan.get
 //***************************************************** */
 
 console.log("Persona: ", clienteJuan.getPersona());
+
+console.log(principal()); // principal se la llama directamente. Es como un static desde el modulo . con default
+
+console.log(texto.PI); // importado como texto
